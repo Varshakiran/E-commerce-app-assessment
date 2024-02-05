@@ -3,8 +3,10 @@ import Dashboard from './components/Dashboard';
 import Sidebar from './components/shared/Sidebar';
 import Products from './components/Products';
 
+
 function App() {
   return (
+    // creating routes for navigation
     <Router>
       <Routes>
         <Route path="/" element={<Sidebar/>}>
