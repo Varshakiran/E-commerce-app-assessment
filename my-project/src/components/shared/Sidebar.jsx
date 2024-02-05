@@ -6,15 +6,22 @@ import { navLinks } from "../lib/consts/NavigationLinks";
 
 // creating sticky nav bar
 function Sidebar() {
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle('dark')
+  }
   return (
     <div className="bg-neutral-100  overflow-hidden">
       <div className="flex-no-wrap fixed top-0 flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
+      {/* <div>
+        <button className="absolute right-10 top-5 bg-black text-white  rounded" onClick={toggleTheme}>Dark mode</button>
+        </div> */}
         {navLinks.map((item) => (
           <SidebarLink key={item.key} item={item} />
         ))}
       </div>
+      
       <div className="p-3 mt-20">{<Outlet />}</div>
-      <div></div>
+     
     </div>
   );
 }

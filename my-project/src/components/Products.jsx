@@ -4,7 +4,7 @@ import DisplayProducts from "./DisplayProducts";
 
 function Products() {
   const [productList, setProductList] = useState([]);
-  
+
   // call api to fetch products
   useEffect(() => {
     axios
