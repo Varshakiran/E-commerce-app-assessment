@@ -29,7 +29,7 @@ function Sidebar() {
 function SidebarLink({ item }) {
   return (
     <div>
-      <Link to={item.path} className="hover:bg-dark-700 active:bg-neutral-600">
+      <Link to={item.path} className="hover:bg-dark-700 active:bg-neutral-600 ml-10">
         {" "}
         <span>{item.label}</span>
       </Link>

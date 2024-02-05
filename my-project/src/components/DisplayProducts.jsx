@@ -26,7 +26,7 @@ function DisplayProducts({ productList }) {
   return (
     <div>
       <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 place-items-center mx-20">
-        {records.map((item) => (
+        {productList.map((item) => (
           <div className="w-[200px" key={item.key}>
             <div>
               <LazyLoadImage
